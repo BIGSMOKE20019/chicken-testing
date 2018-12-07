@@ -100,3 +100,11 @@ class Pic:
     
 def setup(bot):
   bot.add_cog(Pic(bot))
+  
+if message.content.startswith('killer'):
+      embed = discord.Embed(title = '', description = 'HITMAN', colour = discord.Colour.dark_red())
+      embed.set_footer(text='')
+      embed.set_thumbnail(url='')
+      embed.set_image(url='https://www.gamespace.com/wp-content/uploads/2018/05/hitman1-780x439.jpg')
+      embed.set_author(name='', icon_url='')
+      await self.bot.send_message(message.channel, embed=embed)
