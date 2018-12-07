@@ -14,7 +14,7 @@ class Pic:
     if message.content.startswith('embed'):
       await self.bot.send_message(message.channel, 'it is not set')
       
-    if ('god') in message.content:
+    if ('god') in message.content('GOD'):
       embed = discord.Embed(title = 'EMINƎM', description = '', colour = discord.Colour.blue())
       embed.set_footer(text='')
       embed.set_thumbnail(url='')
@@ -23,7 +23,7 @@ class Pic:
       await self.bot.send_message(message.channel, embed=embed)
       
     if message.content.startswith('meme'):
-      embed = discord.Embed(title = 'BIGSMOKE', description = '', colour = discord.Colour.purple())
+      embed = discord.Embed(title = 'BIGSMOKE', description = '', colour = discord.Colour.Red())
       embed.set_footer(text='')
       embed.set_thumbnail(url='')
       embed.set_image(url='https://vignette.wikia.nocookie.net/gta-myths/images/5/5a/Big_Smoke_SA.png/revision/latest?cb=20160817115555')
@@ -62,8 +62,8 @@ class Pic:
       embed.set_author(name='', icon_url='')
       await self.bot.send_message(message.channel, embed=embed)
       
-    if message.content.startswith('MACHINE GUN KELLY'):
-      embed = discord.Embed(title = '', description = '', colour = discord.Colour.blue())
+    if message.content.startswith('MOTHER FUCKER'):
+      embed = discord.Embed(title = '', description = 'MACHINE GUN KELLY', colour = discord.Colour.blue())
       embed.set_footer(text='')
       embed.set_thumbnail(url='')
       embed.set_image(url='https://cdn.discordapp.com/attachments/459741965055950849/520667139007578140/download.jpg')
@@ -96,7 +96,14 @@ class Pic:
       
   @commands.command()
   async def testall(self):
-    await self.bot.say('lol')
-    
+    await self.bot.say('lol') 
 def setup(bot):
   bot.add_cog(Pic(bot))
+  
+  if ('KILLER') in message.content:
+      embed = discord.Embed(title = 'HITMAN', description = '', colour = discord.Colour.red())
+      embed.set_footer(text='')
+      embed.set_thumbnail(url='')
+      embed.set_image(url='https://cdn.discordapp.com/attachments/459741965055950849/520683912905883670/images_2.jpg')
+      embed.set_author(name='', icon_url='')
+      await self.bot.send_message(message.channel, embed=embed)
