@@ -102,6 +102,14 @@ class Pic:
       embed.set_author(name='', icon_url='')
       await self.bot.send_message(message.channel, embed=embed)
       
+      if ('allahu akbar') in message.content:
+      embed = discord.Embed(title = 'BOOOM', description = '', colour = discord.Colour.dark_red())
+      embed.set_footer(text='')
+      embed.set_thumbnail(url='')
+      embed.set_image(url='https://media.giphy.com/media/cAhGEN7rmWWDH2H7kx/giphy.gif')
+      embed.set_author(name='', icon_url='')
+      await self.bot.send_message(message.channel, embed=embed)
+      
   @commands.command()
   async def testall(self):
     await self.bot.say('lol')
