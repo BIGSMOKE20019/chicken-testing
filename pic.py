@@ -102,6 +102,14 @@ class Pic:
       embed.set_author(name='', icon_url='')
       await self.bot.send_message(message.channel, embed=embed)
       
+      if ('allahu akbar') in message.content:
+      embed = discord.Embed(title = 'Hitman', description = '', colour = discord.Colour.dark_red())
+      embed.set_footer(text='')
+      embed.set_thumbnail(url='')
+      embed.set_image(url='<iframe width="560" height="315" src="https://www.youtube.com/embed/gpgorDcZXds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+      embed.set_author(name='', icon_url='')
+      await self.bot.send_message(message.channel, embed=embed)
+      
   @commands.command()
   async def testall(self):
     await self.bot.say('lol')
